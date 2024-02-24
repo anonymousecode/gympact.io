@@ -74,16 +74,16 @@ footer{
     <a href="javascript:void(0)" class="dropbtn">About us</a>
     <div class="dropdown-content">
       <a href="#">Our Approach</a>
-      <a href="#">Contact</a>
-      <a href="#">Our trainers</a>
+      <a href="contact.html">Contact</a>
+      <a href="tlist.html">Our trainers</a>
     </div>
   </li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Login</a>
     <div class="dropdown-content">
-      <a href="login.html">User Login</a>
+      <a href="ulogin.html">User Login</a>
       <a href="alogin.html">Admin Login</a>
-      <a href="alogin.html">Trainer Login</a>
+      <a href="tlogin.html">Trainer Login</a>
     
     </div>
   </li>  
@@ -94,7 +94,7 @@ footer{
     <div class="dropdown-content">
       <a href="#">Sucess stories</a>
       <a href="#">Workout tips</a>
-      <a href="#">Shop</a>
+      <a href="sales">Shop</a>
     </div>
   </li>
   <li><a href="home.html">Home</a></li>
@@ -105,9 +105,7 @@ footer{
   <div class="mySlides1">
     <img src="https://goldsgym.in/uploads/slider/compress-compress-GGAppdownloadebbanner-01.jpeg" style="width:100%">
   </div>
-
-
-
+	
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div><br>  <hr width="100%">
@@ -142,29 +140,6 @@ footer{
         <h3 align="center">Discover a complimentary, customized workout plan created by our elite Personal Trainers so you can pursue results anywhere.</h3><br><br><br><br><br><br>
     </div>
 
-      
-   
-<script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block"; 
-  setTimeout(showSlides, 2000); 
-}
 </script>
     <footer>
         <span class="copyright" align="center">Copyright 2022 - Gympact</span>
