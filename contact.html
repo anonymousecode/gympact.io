@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Us </title>
+	<link rel="stylesheet"
+		href="styles.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+html {
+    scroll-behaviour: smooth;
+}
+ 
+:root {
+    --navbar-height: 59px;
+}
+ 
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.logo img {
+    width: 33%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+ 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+ 
+.nav-list {
+    width: 70%;
+    display: flex;
+}
+ 
+.nav-list li {
+    list-style: none;
+    padding: 2px 6px;
+}
+ 
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+ 
+.nav-list li a:hover {
+    color: grey;
+}
+
+ 
+.background {
+    background-color: grey;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+ 
+.firstsection {
+    height: 100vh;
+}
+ 
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+ 
+.firstHalf {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.firstHalf img {
+    display: flex;
+    border-radius: 9050px;
+}
+ 
+.text-big {
+    font-family: "Piazzolla", serif;
+    font-weight: bold;
+    font-size: 41px;
+    text-align: center;
+}
+ 
+.text-small {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 18px;
+    text-align: center;
+}
+ 
+.center {
+    text-align: center;
+}
+
+
+html {
+      scroll-behavior: smooth;
+     }
+
+
+a   {
+      text-decoration:none;
+	  color:inherit;
+    }
+
+#inp{
+      height:60px;
+      width:555px;
+      font-family:Georgia;	  
+      border-radius: 5px;
+	}
+
+textarea{
+          height:150px;
+		  width:555px;
+          border-radius: 5px;
+		  font-family:Georgia;
+		}
+
+#submit{
+        height:60px;
+        width:555px;
+        background:#ffc000;	
+        font-family:Georgia;
+        font-size:18px;	 
+        border-radius: 5px;	
+	   }
+
+#map{
+      float:left;
+	  padding:50px;
+	  height:450px;
+	  width:550px;
+    }	
+	    
+
+</style>
+
+<body>
+	<nav class="navbar background">
+		
+		<!-- Creating the list of
+			items -->
+    <center><br>
+		<ul class="nav-list">
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#Topics">News</a></li>
+			<li><a href="#Shop">Shop</a></li>
+            <li><a href="#AboutUs">AboutUs</a></li>
+		</ul>
+    </center>
+		
+	</nav>
+	<section class="background firstsection">
+		<div class="box-main">
+			<div class="firstHalf">	
+				<p class="text-big">Contact Us</p>
+
+				<p class="text-small">
+					You can Contact Us if you face any problem
+				</p>
+
+				<br>
+
+			</div>
+		</div>
+	</section>
+    
+ <div>
+   <form align="center"><br><br><br><Br>
+    <input id="inp" type="text" name="name" size="40" placeholder=" Name"> <br><br>
+	<input id="inp" type="text" name="email" size="40" placeholder=" Email"><br><br>
+	<textarea placeholder=" Enter your Message here" name="message" style="resize:none;"></textarea><br><br>
+	<input id="submit" type="submit" name="submit" value="Submit">
+   </form>	
+  
+  </div><br><br>
+  
+   <div style="float:left; padding-left:250px;">
+    <h2><u> Communication Address </u></h2><br>
+	<h4> Gympact <br><br> MG Road , Near Shenoys <br><br></r> Ernakulam - 682016 </h4>
+   </div>	
+   <div style="float:right; padding-right:250px;">
+    <h2><u> Phone Number </u></h2><br>
+	<h4>Call us now at <br><br><u><a href="tel:7769006644"> +91 7769006644 </a></u></h4><br>
+   </div> <br><br><br><br><br><br>
+  
+    
+
+</body>
+
+</html>

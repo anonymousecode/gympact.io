@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Gympact - Userlogin</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#ffad33 ;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+div.container{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 50px 50px -50px darkslategray;
+}
+
+div.container div.myform{
+  width: 270px;
+  margin-right: 30px;
+}
+
+div.container div.myform h2{
+  color: #1c1c1e;
+  margin-bottom: 20px;
+}
+
+div.container div.myform input{
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 0;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+div.container div.myform button{
+  color: white;
+  background-color: #1c1c1e;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px 12px;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
+div.container div.image img{
+  width: 300px;
+}
+    
+    a {
+        color: black;
+    }
+</style>
+<body><br><br><br><br><br>
+    <img src="login.png">
+    <div class="container">
+        <div class="myform">
+          <form>
+            <h2>User Login</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log in</button><br><br>
+              
+            Need an account?<a href="signup.jsp"> Signup</a>
+          </form>
+        </div>
+        <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuMLc2CeufoyW0R0tZDrq4DpbTdbdkkAcUbw&usqp=CAU">
+        </div>
+      </div>
+    
+</body>
+
+</html>

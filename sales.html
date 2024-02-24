@@ -1,0 +1,264 @@
+<html>
+<head>
+    <title>Gympact - Products</title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+</head>    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+body{
+        margin:0px;
+        padding: 0px;
+        font-family: poppins;
+        background-color: #ffffff;
+    }
+*{
+    box-sizing: border-box;
+}
+ul{
+        list-style: none;
+    }
+a{
+    text-decoration: none;
+}
+nav{
+    width:100%;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+.navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 45px;
+        }
+.logo img{
+            height: 30px;
+        }
+.menu{
+            display: flex;
+        }
+.menu li{
+            position: relative;
+            margin: 20px;
+            display: flex;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+.menu li a{
+            color: #555555;
+        }
+.right-menu a{
+                margin: 0px 10px;
+                font-size: 1.2rem;
+                color: rgba(0,0,0,0.7);
+            }
+.menu a:hover,.right-menu a:hover{
+                                        color: #0b9d8a;
+                                        transition: all ease 0.3s;
+                                    }
+.sale-lable{
+                width:38px;
+                height: 17px;
+                background-color: #f76b6a;
+                color: #ffffff;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                position: absolute;
+                top: -20px;
+                right: -20px;
+            }
+    
+.sale-lable:after{
+                    content: '';
+                    width:0px;
+                    height: 0px;
+                    border-bottom: 5px solid transparent;
+                    border-left: 3px solid transparent;
+                    border-top: 7px solid #f76b6a;
+                    border-right: 5px solid transparent;
+                    position: absolute;
+                    left: 10%;
+                    top: 100%;
+                }
+
+.card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+          font-family: arial;
+        }
+
+.price {
+          color: grey;
+          font-size: 19px;
+        }
+
+.card button {
+                  border: none;
+                  outline: 0;
+                  padding: 12px;
+                  color: white;
+                  background-color: #000;
+                  text-align: center;
+                  cursor: pointer;
+                  width: 100%;
+                  font-size: 18px;
+                }
+
+.card button:hover {
+                      opacity: 0.    
+                    }
+
+img {   width:180px;
+        height: 210px;
+        margin: 15px;
+        cursor: pointer;
+        position: relative;
+    }
+
+.container {
+                width:90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                padding-left: 130px;
+            }   
+
+.card {
+        display: flex;
+        flex-grow: 0.5;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #f7f7f7;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+.services{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.services-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    min-width: 250px;
+    padding: 20px;
+    margin: 15px;
+    flex-grow: 0.7;
+}
+.services-box i{
+    color: #0b9d8a;
+    font-size: 2rem;
+    margin: 15px;
+}
+.services-box span{
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+.services-box p{
+    color: #878787;
+    margin: 0px;
+    font-size: 0.9rem;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.copyright{
+    font-size: 0.9rem;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}    
+</style>
+<body>
+    
+    <div class="navigation">
+        <!--logo------------>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <!--menu-icon------------->
+        <div class="toggle"></div>
+        <!--menu----------------->
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li  class="Sales.html"><a href="#" >Shop</a></li>
+            <li><a href="comm.html">Community</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+        <div class="right-menu">
+            <a href="javascript:void(0);" class="user">
+                <i class="far fa-user"></i>
+            </a>
+        </div>
+    </div>
+    <div class="Container">
+      <div class="card"> <!-- card 1-->
+          <img src="https://www.guardian.in/media/catalog/product/cache/9ba3c300ac1573e3afb1c6d730692e18/9/0/90200025-amp_isolate_2kg_vanilla-03_2.jpg"  style="width:100%">
+          <h3>GNC 25g Protein,Low Carb - 4.4lbs, 2kg (Chocolate)</h3>
+          <p class="price">₹ 6,999</p>
+          <p>GNC AMP whey protein isolate is one of the most advanced whey protein formula. It is effective in muscle repair post workout and is ideal for muscle growth.</p>
+          <p><button>Buy Now</button></p>
+      </div>
+        
+      <div class="card"> <!-- card 2-->
+          <img src="https://www.guardian.in/media/amasty/webp/catalog/product/cache/9ba3c300ac1573e3afb1c6d730692e18/p/p/pp-100_whey-2kg_chocolate_supreme-01.1_2.webp" style="width:100%">
+          <h3>GNC Whey Protein - 4.4lbs, 2kg (Chocolate)</h3>
+          <p class="price">₹ 7,999</p>
+          <p>GNC  Whey Protein delivers an ultra-high quality macronutrient protein formula with high amounts of naturally occurring amino acids the body needs every day.</p>
+          <p><button>Buy Now</button></p>
+      </div>
+        
+      <div class="card">  <!-- card 3-->
+          <img src="https://www.guardian.in/pub/media/catalog/product/cache/ed00b382df5c884abd2950feb527467b/l/-/l-carnitine_500_label-01_1.jpg"  style="width:100%">
+          <h3>GNC L-Carnitine 500Mg - 60Capsules</h3>
+          <p class="price">₹ 1,499</p>
+          <p>GNC Pro Performance L-Carnitine is one of the top selling L-Carnitine supplements in India. It is known for its high quality, potency, and delivers effective results.</p>
+          <p><button>Buy Now</button></p>
+      </div>
+ </div>    
+    
+    <section class="services">
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Shipping</span>
+            <p>Free Shipping for all US order</p>
+        </div>
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Support 24/7</span>
+            <p>We support 24h a day</p>
+        </div>
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>You have 30 days to Return</p>
+        </div>   
+    </section>
+    <footer>
+        <span class="copyright" align="center">Copyright 2022 - Gympact</span>
+    </footer>
+</body>
+</html>

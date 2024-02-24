@@ -1,0 +1,93 @@
+<html>
+<head><title>Edit Profile</title>
+<style>
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    }
+
+* {
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+.container {
+              padding: 16px;
+              background-color: white;
+            }
+
+input[type=text],textarea {
+                  width: 100%;
+                  padding: 15px;
+                  margin: 5px 0 22px 0;
+                  display: inline-block;
+                  border: none;
+                  background: #f1f1f1;
+                }
+
+input[type=text]:focus, textarea{
+                          background-color: #ddd;
+                          outline: none;
+                        }
+
+hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+.registerbtn {
+              background-color: #04AA6D;
+              color: white;
+              padding: 16px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+
+.registerbtn:hover {
+                      opacity: 1;
+                    }
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+          background-color: #f1f1f1;
+          text-align: center;
+        }
+</style>
+</head>
+<body>
+
+<form action="">
+  <div class="container">
+    <h1>Edit profile</h1>
+    <hr>
+
+    <label for="weight"><b>Enter weight :</b></label>
+    <input type="text" placeholder="Weight" name="weight" id="weight" required>
+
+    <label ><b>Schedule :</b></label><br><br>
+    <input type="radio"  name="schedule"  required>
+    <label for="schedule"><b>Morning</b></label>
+    <input type="radio"  name="schedule"  required>
+    <label for="schedule"><b>Evening</b></label><br><br>
+      
+    <label for="Address"><b>Enter address :</b></label><br>
+    <textarea name="address" placeholder="Address" required></textarea><br><br>
+      
+    <label for="phone"><b>Enter Phone number :</b></label><br>
+    <input type="text" placeholder="Phone number" name="phone"  required>
+      
+    <hr>
+
+    <button type="submit" class="registerbtn">Save</button>
+  </div>
+  
+</form>
+
+</body>
+</html>

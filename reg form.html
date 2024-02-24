@@ -1,0 +1,107 @@
+<html>
+<head>
+<title></title>
+<style>
+   
+h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: blue;
+ text-align: center; 
+ text-decoration: underline
+}
+table{
+ font-family: verdana; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background-color:white ;
+ border-collapse: collapse; 
+ border: 4px solid #000000;
+  
+}
+table.inner{
+ border: 10px
+}
+input[type=text], input[type=email], input[type=number]{
+ width: 50%;
+ padding: 6px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+input[type=submit], input[type=reset]{
+ width: 15%;
+ padding: 8px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+</style>
+</head>
+<body background="bgreg.jpg">
+<table align="center" cellpadding = "10">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="50">
+</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="50">
+</td>
+</tr>
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="EmailID" maxlength="100" ></td>
+</tr>
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10" >
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+</td>
+</tr>
+<tr>
+<td>Date of Birth(DOB)</td>
+<td><input type="Date" name="dob">
+</td>
+</tr>
+<tr>
+<td>Address<br /><br /><br /></td>
+<td><textarea style="resize: none;" name="Address" rows="10" cols="50" ></textarea></td>
+</tr>
+<tr>
+<td>City</td>
+<td><input type="text" name="City" maxlength="50" >
+</td>
+</tr>
+<tr>
+<td>Pin Code</td>
+<td><input type="Number" name="PinCode" maxlength="6">
+</td>
+</tr>
+<tr>
+<td>State</td>
+<td><input type="text" name="State" maxlength="50" >
+</td>
+</tr>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
