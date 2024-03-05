@@ -97,7 +97,7 @@ html {
 .text-big {
     font-family: "Piazzolla", serif;
     font-weight: bold;
-    font-size: 41px;
+    font-size: 60px;
     text-align: center;
 }
  
@@ -151,7 +151,25 @@ textarea{
 	  height:450px;
 	  width:550px;
     }	
-	    
+
+.scroll-down-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-down-arrow.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .scroll-down-arrow:hover {
+        transform:scale(1.5);
+    }
+
 
 </style>
 
@@ -164,27 +182,31 @@ textarea{
 		<ul class="nav-list">
 			<li><a href="#Home">Home</a></li>
 			<li><a href="#Topics">News</a></li>
-			<li><a href="#Shop">Shop</a></li>
+			<li><a href="shop.html">Shop</a></li>
             <li><a href="#AboutUs">AboutUs</a></li>
 		</ul>
     </center>
 		
 	</nav>
-	<section class="background firstsection">
+<section class="background firstsection">
 		<div class="box-main">
 			<div class="firstHalf">	
 				<p class="text-big">Contact Us</p>
 
-				<p class="text-small">
-					You can Contact Us if you face any problem
+				<p class="text-small"><br>
+					Feel free to reach out if you have any questions or concerns.
 				</p>
 
 				<br>
 
 			</div>
-		</div>
-	</section>
-    
+		</div><br><br>
+        <div class="scroll-down-arrow" onclick="scrollToBottom()">
+            <span>&#9660;</span>
+        </div>
+</section>
+
+
  <div>
    <form align="center"><br><br><br><Br>
     <input id="inp" type="text" name="name" size="40" placeholder=" Name"> <br><br>
@@ -193,8 +215,8 @@ textarea{
 	<input id="submit" type="submit" name="submit" value="Submit">
    </form>	
   
-  </div><br><br>
-  
+  </div><br>
+
    <div style="float:left; padding-left:250px;">
     <h2><u> Communication Address </u></h2><br>
 	<h4> Gympact <br><br> MG Road , Near Shenoys <br><br></r> Ernakulam - 682016 </h4>
@@ -203,8 +225,24 @@ textarea{
     <h2><u> Phone Number </u></h2><br>
 	<h4>Call us now at <br><br><u><a href="tel:7769006644"> +91 7769006644 </a></u></h4><br>
    </div> <br><br><br><br><br><br>
-  
-    
+   <section id="lastSection" >  </section> 
+<script>
+       function scrollToBottom() {
+            const lastSection = document.getElementById('lastSection');
+            const windowHeight = window.innerHeight;
+            const targetPosition = lastSection.offsetTop;
+
+            window.scrollTo({
+                top: targetPosition - windowHeight / 2,
+                behavior: 'smooth'
+            });
+
+            // Hide the arrow after scrolling
+            const scrollArrow = document.querySelector('.scroll-down-arrow');
+            scrollArrow.classList.add('hidden');
+        }
+</script>
+
 
 </body>
 
